@@ -1,0 +1,27 @@
+{
+  "name": "cie-lab",
+  "version": "1.0.0",
+  "description": "This project helps convert RGB to LAB",
+  "main": "index.html",
+  "scripts": {
+    "build:dev": "npm run remove:dist && parcel index.html",
+    "build:prod": "npm run remove:dist && parcel build index.html",
+    "remove:dist": "rm -rf ./dist"
+  },
+  "links": [
+    "http://www.easyrgb.com/en/math.php",
+    "http://www.ryanjuckett.com/programming/rgb-color-space-conversion/?start=2"
+  ],
+  "keywords": [
+    "ts",
+    "cielab",
+    "rgb",
+    "converter"
+  ],
+  "author": "Eugene Tikhonov",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.9.3",
+    "typescript": "^2.9.2"
+  }
+}
