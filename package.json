@@ -6,7 +6,8 @@
   "scripts": {
     "build:dev": "npm run remove:dist && parcel index.html",
     "build:prod": "npm run remove:dist && parcel build index.html",
-    "remove:dist": "rm -rf ./dist"
+    "remove:dist": "rm -rf ./dist",
+    "server:static-file": "http-server ./public -c-1 -a 127.0.0.1 -p 8080 -o -s --cors"
   },
   "links": [
     "http://www.easyrgb.com/en/math.php",
@@ -21,6 +22,7 @@
   "author": "Eugene Tikhonov",
   "license": "MIT",
   "devDependencies": {
+    "http-server": "^0.11.1",
     "parcel-bundler": "^1.9.3",
     "typescript": "^2.9.2"
   }
